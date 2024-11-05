@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #100f0f;
+    color: white;
+}
+
+#mainContainer{
+    margin-top: 5rem;
+    /*border: 2px solid black;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid blueviolet;
+    padding-bottom: 2rem;
+}
+
+.inputFile{
+    /*background-color: antiquewhite;*/
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+input{
+    font-size: large;
+    cursor: pointer;
+}
+
+/*button{*/
+/*    font-size: large;*/
+/*    padding: 2px 20px;*/
+/*    border-radius: 10px;*/
+/*    border: none;*/
+/*    background-color: blueviolet;*/
+/*    cursor: pointer;*/
+/*}*/
+
+p{
+    /*background-color: aquamarine;*/
+    font-size: x-large;
+    display: flex;
+    padding-top: 0.7rem;
+    /*align-items: center;*/
+    /*border: 1px solid white;*/
+}
+
+.imagePreview{
+    /*border: 1px solid white;*/
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    max-width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    /*gap: 13rem;*/
+    /*border: 1px solid white;*/
+}
+
+h3{
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+}
+
+
+button {
+  font-size: large;
+  padding: 0.6em 2em;
+  font-weight: 500;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+@media (max-width : 1230px) {
+    .result{
+        max-width: 70%;
+    }
+}
+
+
+@media (max-width : 960px) {
+    .result{
+        max-width: 80%;
+    }
+}
+
+@media (max-width : 800px) {
+    .result{
+        max-width : 90%
+    }
+}
+
+@media (max-width : 660px) {
+    .result{
+        max-width : 95%
+    }
+}
+
+
+@media (max-width: 600px){
+    #mainContainer{
+        margin-top: 3rem;
+    }
+
+    .result{
+        flex-direction: column;
+    }
+
+    p{
+        padding-bottom: 1rem;
+    }
+
+    .inputFile{
+        flex-direction: column;
+    }
+
+    button{
+        margin-top: 2rem;
+    }
+}
