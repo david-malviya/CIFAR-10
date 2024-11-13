@@ -9,7 +9,14 @@ from flask_cors import CORS
 # from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
-CORS(app, resources={r"/classify": {"origins": "http://localhost:5173"}})
+CORS(app, resources={
+    r"/classify": {
+        "origins": [
+            "http://localhost:5173", 
+            "https://cifar-10-8rlk80iaj-david-malviyas-projects.vercel.app"
+        ]
+    }
+})
 
 model_path = './CIFAR-10.h5'
 model = tf.keras.models.load_model(model_path)
